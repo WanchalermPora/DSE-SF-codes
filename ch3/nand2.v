@@ -1,4 +1,4 @@
-// Verilog Code 3.7 Standard 2-input NAND gate
+// Verilog Code 3.5 Standard 2-input NAND gate
 module nand2 (
     input  I0,      // First input
     input  I1,      // Second input
