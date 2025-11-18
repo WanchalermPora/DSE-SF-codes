@@ -1,4 +1,4 @@
-// Verilog Code 3.5: Synthesizable Combinational Mux
+// Verilog Code 3.6: Synthesizable Combinational Mux
 // The output 'O' MUST be declared as 'reg'
 // because it is assigned inside a procedural block,
 // but it will be synthesized as a wire.
