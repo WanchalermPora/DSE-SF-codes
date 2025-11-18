@@ -1,4 +1,4 @@
-// Verilog Code 3.6: Synthesizable D-Flip-Flop
+// Verilog Code 3.7: Synthesizable D-Flip-Flop
 // This infers a register (a flip-flop).
 module d_ff (
     input  logic clk,
