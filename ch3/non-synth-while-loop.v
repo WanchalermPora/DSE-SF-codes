@@ -3,6 +3,7 @@ always @(*) begin
     temp = data_in;
     while (temp < 100) begin
         temp = temp + 1; // Loop has no clock
+        #10;
     end
     data_out = temp;
 end
