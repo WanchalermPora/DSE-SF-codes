@@ -4,8 +4,8 @@ module tb_nor3;
     logic dut_out;
     logic ref_out;
 
-    // Instantiate DUT (behavioural description)
-    nor3 dut (
+    // Instantiate DUT (behavioural description of inverted AND)
+    inverted_and3 dut (
         .I0(I0), .I1(I1), .I2(I2),
         .O_NOR(dut_out)
     );
@@ -17,7 +17,7 @@ module tb_nor3;
         $display("Starting NOR3 testbench");
         for (int vec = 0; vec < 8; vec++) begin
             {I0, I1, I2} = vec[2:0];
-            #1;
+            #10;
             if (dut_out !== ref_out) begin
                 $display("Mismatch: I0 I1 I2 = %b%b%b  DUT = %b  REF = %b",
                          I0, I1, I2, dut_out, ref_out);
