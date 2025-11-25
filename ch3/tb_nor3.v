@@ -4,13 +4,13 @@ module tb_nor3;
     logic dut_out;
     logic ref_out;
 
-    // Instantiate DUT (inverted AND)
+    // Instantiate DUT (name mapping)
     inverted_and3 dut (
         .I0(I0), .I1(I1), .I2(I2),
         .O_NOR(dut_out)
     );
 
-    // Instantiate reference model (NOR)
+    // Instantiate reference model (position mapping)
     nor U_ref (ref_out, I0, I1, I2);
 
     initial begin
