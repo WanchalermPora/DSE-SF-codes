@@ -4,17 +4,17 @@
 // but it will be synthesized as a wire.
 //
 module mux_2to1 (
-    input  logic A,
-    input  logic B,
+    input  logic I0,
+    input  logic I1,
     input  logic SEL,
     output reg  O  // <-- 'reg' is required here
 );
     always @(*) begin
         if (SEL == 1'b0) begin
-            O = A;
+            O = I0; // select I0 when SEL is 0
         end
         else begin
-            O = B;
+            O = I1; // select I1 otherwise
         end
     end
 endmodule
